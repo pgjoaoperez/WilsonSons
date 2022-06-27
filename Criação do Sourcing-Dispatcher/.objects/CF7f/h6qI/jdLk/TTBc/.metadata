@@ -1,0 +1,16 @@
+﻿{
+  "Id": "TTBcfcQqZUCqORfhhRLdHA",
+  "Reference": "HqpUGC13vEeX-P_NT6E_bg/TTBcfcQqZUCqORfhhRLdHA",
+  "ParentRef": "HqpUGC13vEeX-P_NT6E_bg/jdLkOUFsZ0upExphQmLk1w",
+  "Name": "CoupaPassword",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2022-06-27T01:02:03.9685389Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-06-27T01:02:42.4254929Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=22.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
