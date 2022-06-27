@@ -1,0 +1,15 @@
+﻿{
+  "Id": "jdLkOUFsZ0upExphQmLk1w",
+  "Reference": "HqpUGC13vEeX-P_NT6E_bg/jdLkOUFsZ0upExphQmLk1w",
+  "ParentRef": "HqpUGC13vEeX-P_NT6E_bg/h6qIm4v1Z0OtAHs5DS8iKg",
+  "Name": "CoupaTelaLogin",
+  "Type": "Screen",
+  "Created": "2022-06-27T00:48:31.5378075Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-06-27T00:49:01.9160332Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=22.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
