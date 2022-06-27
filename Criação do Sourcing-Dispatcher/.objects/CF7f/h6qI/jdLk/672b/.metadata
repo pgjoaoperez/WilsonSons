@@ -1,0 +1,16 @@
+﻿{
+  "Id": "672bQESEuk2a0rhujaCXig",
+  "Reference": "HqpUGC13vEeX-P_NT6E_bg/672bQESEuk2a0rhujaCXig",
+  "ParentRef": "HqpUGC13vEeX-P_NT6E_bg/jdLkOUFsZ0upExphQmLk1w",
+  "Name": "CoupaSignin",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Created": "2022-06-27T01:20:55.980148Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-06-27T01:21:54.4308251Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=22.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
