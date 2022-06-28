@@ -1,0 +1,13 @@
+﻿{
+  "Id": "3Lp7N_WLqUSE-C4R0pj7ow",
+  "Reference": "HqpUGC13vEeX-P_NT6E_bg/3Lp7N_WLqUSE-C4R0pj7ow",
+  "ParentRef": "HqpUGC13vEeX-P_NT6E_bg/ux5hFWk-OkaE0HMfUMSClg",
+  "Name": "CoupaView",
+  "Type": "Element",
+  "TaxonomyType": "Listbox",
+  "Created": "2022-06-28T01:16:56.8707337Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-06-28T01:16:56.8707337Z"
+}

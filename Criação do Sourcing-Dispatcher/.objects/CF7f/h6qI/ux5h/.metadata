@@ -1,0 +1,15 @@
+﻿{
+  "Id": "ux5hFWk-OkaE0HMfUMSClg",
+  "Reference": "HqpUGC13vEeX-P_NT6E_bg/ux5hFWk-OkaE0HMfUMSClg",
+  "ParentRef": "HqpUGC13vEeX-P_NT6E_bg/h6qIm4v1Z0OtAHs5DS8iKg",
+  "Name": "CoupaRequests",
+  "Type": "Screen",
+  "Created": "2022-06-28T01:16:06.8046428Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-06-28T01:16:44.835998Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=22.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
