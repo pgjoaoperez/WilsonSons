@@ -2,13 +2,13 @@
   "Id": "eTYLrP4tOUSDFxGiZZJXLA",
   "Reference": "HqpUGC13vEeX-P_NT6E_bg/eTYLrP4tOUSDFxGiZZJXLA",
   "ParentRef": "HqpUGC13vEeX-P_NT6E_bg/h6qIm4v1Z0OtAHs5DS8iKg",
-  "Name": "CoupaTelaInicial",
+  "Name": "CoupaHome",
   "Type": "Screen",
   "Created": "2022-06-27T01:23:43.434102Z",
   "CreatedBy": [
     "UiPath.Platform, Version=22.4.1.0, Culture=neutral, PublicKeyToken=null"
   ],
-  "Updated": "2022-06-27T01:23:50.2386071Z",
+  "Updated": "2022-06-28T00:59:51.2149095Z",
   "UpdatedBy": [
     "UiPath.Platform, Version=22.4.1.0, Culture=neutral, PublicKeyToken=null"
   ]

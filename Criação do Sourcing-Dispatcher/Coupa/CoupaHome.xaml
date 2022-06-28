@@ -1,0 +1,132 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="CoupaHome" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1770,1265" sap2010:WorkflowViewState.IdRef="CoupaHome_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="CoupaHome" sap:VirtualizedContainerService.HintSize="562,1200" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'CoupaHome'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="520,1108" sap2010:WorkflowViewState.IdRef="NCheckState_1" Timeout="10" Version="V1">
+      <uix:NCheckState.IfExists>
+        <Sequence sap:VirtualizedContainerService.HintSize="476,892" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Coupa acessado com sucesso.&quot;]" />
+          <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="CoupaHome" sap:VirtualizedContainerService.HintSize="434,652" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="2cd04bd7-bd4f-48a3-83b9-4b8dd51c5c10" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="376,396" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Acessando requisições.&quot;]" />
+                  <uix:NClick ClickType="Single" DisplayName="Click 'CoupaRequests'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" Version="V1">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://wilsonsons-test.coupahost.com/user/home" ContentHash="eSsVPoMGo0iJ4750-tBDsg" DesignTimeRectangle="368, 144, 102, 30" ElementType="Text" FriendlyName="'Requests'" FullSelectorArgument="&lt;webctrl aaname='Requests' aria-role='menuitem' tag='A' innertext='Requests' title='Coupa Home' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Requests' aria-role='menuitem' tag='A' innertext='Requests' title='Coupa Home' type='' class='' check:text='Requests' /&gt;" Guid="94ebb460-2cfe-4fde-95a1-7b49b91d06f0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGoAAAAiCAYAAAC3KkyWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPcSURBVGhD7Zexa9tAFIf7P92kwWAwBDJ4spYaAjUdagoxBGIKDR2aJShQhIdMxoESCvESlKE4EBIIuFDUISgQcKEoEPAQEAQEGQSGX9+dJPsUO6mb2IZr7wOBTjqdpPvu3rt7AY0SaFGKoEUpghalCFqUImhRiqBFKYIWpQhalCJoUYqgRSnCjEV5sBkDkw5juYx6owP/LqmieRJzEWWfJ0UiCnporxkw1joIkmuq4u+XM/+2SOYuStB3UGVltK+SspIEcFYn/NuCWIyogTt+fRDAbdZhFniINLC01oJ7f8oFLlprSzDoWZZbQq3pIrhsobjqjGbnuU3P2/TmLMFhDUyuR0S/HFivk/YKFViHPqLkHidzn3/Tyzqssz4QdmGV8sNwLo607TsfzlYFS7n4ugj1213QUzNlMaKu2iizGpybpEzd4zVMCocOfN5Tgwj+QQ1GiTo8zWWRh52Sgcquh3BAZarTP7NQKVCHPUUUzepazoT9PYzLtzR4qP3aYdKlkQtLvk/vC689eMMen/RvEdxtA2bDjb+RXwn78C5mrWmBOcpseKPRe91GhdXRuU3KAh/tFUYdF3dteLwBVmyhl3RATITuljSaOVOJiju02OyJUkr0zaKZSs/yd9yQyLFvkpkkKg6H9aNE7hyZi6hMiKDcZJ/2R5KI4Ct14htnLDx4DapPQofnn1xxLtM/qD5BFM1OCk32D1EYIeSkMz1A5x3N1kIVrTN/OENGTI4WwVEdeZZHtdmF/6Dk5zPfGTXooVUazZIU0YkZmdIhi0rOZcZC2pSixgdQekgheRDCP9vDxisSlubEobDJojjhVRd7Hyok7IFcOwPmH/oovBg5C11pHzXW2ROYh6hJnfwQ4aWDTRpk5m4aLqdo47YH56MJVrofsp/PAhYTcRwvyjmKr9zYZkbefUSOWtmD/6ccdbFDqzQb7qP1QgprDOUvvihNi8hhfys7ohViZuE0GxYgivjZgskq0j6K8oHYBLfRS+N6ssrqpT+YrPpq+73HV31itUb1Dmip/Ui9iISazBTLbVGPcxfAv6B8xM9DDyeUm4J0NEV9nGwVpQEWD7jhCk+0EcI7ptyUPsTffWqhWKQZLiflGbAYUWKEG9kO5vuozxuoLNN1eoZRQjbfbqBzndznyPuogok65QyPlvGZdgix/+F5RaoXnNNMG6vXgb1uUi7h70v2PHz5z2+SqNZ6ebgfEu00aD+USuX0T4bvyb8/obZJ1G4dZfkf1m105X+YETMWNX+myW//IlqUImhRiqBFKYJyov5XtChF0KIUQYtSBC1KEbQoRdCilAD4DVUnPukfvYWYAAAAAElFTkSuQmCC" InformativeScreenshot="1f2bc1ff1c5ec00110b648781f96e495.png" Reference="HqpUGC13vEeX-P_NT6E_bg/s6HwCXBG9k2BwUshOgav5A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Coupa Home' /&gt;" SearchSteps="Selector, Image" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="Nc1Lj94NYUuuI7VkrsDUbA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIFSURBVDhPjVNPSxtBHJ2PkPoJ7K1HCQoeW4QePHnswYNQ8eyhH8BjL6XSsvVQiwnUIiKihypBilspVlJaRcRidM3EtGlWTXbX3awbs8n4e7OzIk0qffBgdub33u/P7LB/IlNZIu4wzZggTtK6mziuTu+AZnCi/mDD+vaCX2bZG8Mnuv1bzkHiU1WoqA6IMupsmmfJQAyslF1BGN2seE83qwHWfR9NE2eyojaQeHjXzRf8Zm4y54lHK2YIkX52JexGS+T9EEJB1Xhs2URLI0pJ0IwRNnX8vGu+dLJVvZKZ/waMwJwX8oVyfZ8MBLEH4iFV1g1fHnhK1o7lUhD2rprnLF18pdITFv48Ye9//Xy2bfvcb6rQdqC1x7N7t5PtoHf0Iw5rIVdxYttpUM+djUpBM+hdPT1nb/kUGTyEgQ0DXNHA2qkN5+4PRTlAwKIBAhN7rpjJ+3IdtoSrdGQQQzNSqiyR4lHg+lmdyq7JNfZwlnjH6z0bFgYI2rEYf5sMuJcuyAn6YSu4P1sMkou/pcORFzpxDF3lF5ld3kJkgAMLfQ1+vziCYCxrWbFg12mUscfmSj/iPaIS30amksIskl8dl6VP9Dg4+blae1241Okce7j2PLHDu0BA1BsC47YsGKv9O94CEAWCCRLGPxi+8RIxdbr3/4VmwGSdGPWKgWUqQ3J9A8auAaRsLO5FtRRgAAAAAElFTkSuQmCC" InformativeScreenshot="f1d12c54e70b1a7dd5fa1e858cbee4db.png" Reference="HqpUGC13vEeX-P_NT6E_bg/eTYLrP4tOUSDFxGiZZJXLA" Selector="&lt;html app='chrome.exe' title='Coupa Home' /&gt;" Url="https://wilsonsons-test.coupahost.com/user/home" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </uix:NCheckState.IfExists>
+      <uix:NCheckState.IfNotExists>
+        <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="250,84" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </uix:NCheckState.IfNotExists>
+      <uix:NCheckState.Target>
+        <uix:TargetAnchorable BrowserURL="https://wilsonsons-test.coupahost.com/user/home" ContentHash="ujqQeiW1RESS8HTDzBt5FQ" DesignTimeRectangle="320, 89, 59, 39" ElementType="Icon" FriendlyName="'IMG global-logo'" FullSelectorArgument="&lt;webctrl tag='IMG' aaname='Wilson Sons' alt='Wilson Sons' title='Coupa Home' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='IMG' aaname='Wilson Sons' alt='Wilson Sons' title='Coupa Home' type='' class='' /&gt;" Guid="a09abbd2-26d7-48dd-8a54-7a1547034d31" ImageBase64="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" InformativeScreenshot="1fdc03d842d9db7b63bdf97950518366.png" Reference="HqpUGC13vEeX-P_NT6E_bg/YA-UpWuZVEWq8ylzgRm8eA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Coupa Home' /&gt;" SearchSteps="Selector, Image" Visibility="Interactive" WaitForReadyArgument="Complete" />
+      </uix:NCheckState.Target>
+    </uix:NCheckState>
+  </Sequence>
+</Activity>
