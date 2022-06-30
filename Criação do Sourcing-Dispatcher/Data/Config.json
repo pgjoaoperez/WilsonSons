@@ -2,6 +2,7 @@
     "Constants": {
         "logF_BusinessProcessName": "Criação do Sourcing",
         "OrchestratorQueueName": "Criação do Sourcing",
+        "OrchestratorQueueFolder": "Wilson Sons",
         "MaxRetryNumber":	0,
         "ExScreenshotsFolderPath": "Exceptions_Screenshots",
         "LogMessage_GetTransactionData": "Processing Transaction Number:",
