@@ -1,12 +1,12 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="SubirItemParaFila" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="in_dtExtractRequisitions" Type="InArgument(sd:DataTable)" />
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="in_dtRequisitions" Type="InArgument(sd:DataTable)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1585,2076</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1585,2014</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SubirItemParaFila_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="60">
@@ -77,12 +77,10 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Nesta sequência, estamos subindo os itens para fila." DisplayName="SubirItemParaFila" sap:VirtualizedContainerService.HintSize="667,2011" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Nesta sequência, estamos subindo os itens para fila." DisplayName="SubirItemParaFila" sap:VirtualizedContainerService.HintSize="667,1949" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="sd:DataTable" Name="dt_filterExtractRequisitions" />
       <Variable x:TypeArguments="x:Int32" Name="tentativa" />
       <Variable x:TypeArguments="x:Int32" Name="maxTentativa" />
-      <Variable x:TypeArguments="x:String" Name="filaOrch" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_resultado" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -91,17 +89,9 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="625,193" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="625,131" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
-            <ui:AssignOperation.To>
-              <OutArgument x:TypeArguments="sd:DataTable">[dt_filterExtractRequisitions]</OutArgument>
-            </ui:AssignOperation.To>
-            <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="sd:DataTable">[in_dtExtractRequisitions.DefaultView.ToTable(True,"Req #")]</InArgument>
-            </ui:AssignOperation.Value>
-          </ui:AssignOperation>
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
             <ui:AssignOperation.To>
               <OutArgument x:TypeArguments="x:Int32">[tentativa]</OutArgument>
@@ -118,18 +108,10 @@
               <InArgument x:TypeArguments="x:Int32">5</InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
-          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
-            <ui:AssignOperation.To>
-              <OutArgument x:TypeArguments="x:String">[filaOrch]</OutArgument>
-            </ui:AssignOperation.To>
-            <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String">[in_Config("OrchestratorQueueName").ToString]</InArgument>
-            </ui:AssignOperation.Value>
-          </ui:AssignOperation>
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="625,106" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Número de requisições a serem subidas para fila: &quot; + in_dtExtractRequisitions.Rows.Count.ToString + vbLf +&#xD;&#xA;&quot;Removendo requisições repitidas, novo número a ser subido: &quot; + dt_filterExtractRequisitions.Rows.Count.ToString]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="625,106" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Número de requisições a serem subidas para fila: &quot; + in_dtRequisitions.Rows.Count.ToString]" />
     <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="625,1509" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
         <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[tentativa &lt;= maxTentativa]" DisplayName="While" sap:VirtualizedContainerService.HintSize="587,1282" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
@@ -141,7 +123,7 @@
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:BulkAddQueueItems TimeoutMS="{x:Null}" DisplayName="Bulk Add Queue Items" FolderPath="Wilson Sons" sap:VirtualizedContainerService.HintSize="509,132" sap2010:WorkflowViewState.IdRef="BulkAddQueueItems_2" QueueItemsDataTable="[in_dtExtractRequisitions]" QueueName="[in_Config(&quot;OrchestratorQueueName&quot;).ToString]" />
+              <ui:BulkAddQueueItems TimeoutMS="{x:Null}" DisplayName="Bulk Add Queue Items" FolderPath="[in_Config(&quot;OrchestratorQueueFolder&quot;).ToString]" sap:VirtualizedContainerService.HintSize="509,132" sap2010:WorkflowViewState.IdRef="BulkAddQueueItems_2" QueueItemsDataTable="[in_dtRequisitions]" QueueName="[in_Config(&quot;OrchestratorQueueName&quot;).ToString]" Result="[dt_resultado]" />
               <If sap2010:Annotation.AnnotationText="Se o número de itens resultantes do BulkAddQueueItems for maior que 0, uma nova tentativa de subir itens para fila é realizada." Condition="[dt_resultado.Rows.Count &gt; 0]" sap:VirtualizedContainerService.HintSize="509,791" sap2010:WorkflowViewState.IdRef="If_2">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
