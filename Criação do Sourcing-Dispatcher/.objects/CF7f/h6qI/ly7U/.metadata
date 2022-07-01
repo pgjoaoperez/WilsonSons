@@ -1,0 +1,15 @@
+﻿{
+  "Id": "ly7UEoebWk-7rSrf_m0btQ",
+  "Reference": "HqpUGC13vEeX-P_NT6E_bg/ly7UEoebWk-7rSrf_m0btQ",
+  "ParentRef": "HqpUGC13vEeX-P_NT6E_bg/h6qIm4v1Z0OtAHs5DS8iKg",
+  "Name": "CoupaLogoff",
+  "Type": "Screen",
+  "Created": "2022-07-01T00:07:02.4959116Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-07-01T00:07:12.9049718Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=22.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

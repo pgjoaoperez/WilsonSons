@@ -1,0 +1,16 @@
+﻿{
+  "Id": "ut-2lcaaR0m5Gg2WjU9nfg",
+  "Reference": "HqpUGC13vEeX-P_NT6E_bg/ut-2lcaaR0m5Gg2WjU9nfg",
+  "ParentRef": "HqpUGC13vEeX-P_NT6E_bg/ux5hFWk-OkaE0HMfUMSClg",
+  "Name": "CoupaUser",
+  "Type": "Element",
+  "TaxonomyType": "Elemento",
+  "Created": "2022-06-30T23:59:17.49216Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-07-01T00:00:07.7625952Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=22.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

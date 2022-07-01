@@ -1,0 +1,16 @@
+﻿{
+  "Id": "3St2K85ahUaBtYDzstjDOA",
+  "Reference": "HqpUGC13vEeX-P_NT6E_bg/3St2K85ahUaBtYDzstjDOA",
+  "ParentRef": "HqpUGC13vEeX-P_NT6E_bg/ly7UEoebWk-7rSrf_m0btQ",
+  "Name": "CoupaLogoff",
+  "Type": "Element",
+  "TaxonomyType": "Elemento",
+  "Created": "2022-07-01T00:07:20.4343093Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-07-01T00:07:48.0999725Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=22.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
